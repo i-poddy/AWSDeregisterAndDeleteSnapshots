@@ -75,3 +75,22 @@ Ensure that the AWS user or role running this script has the following permissio
 
 - **AWS CLI not configured**: Check you have Set AWS Access Keys as Environment Variables correctly
 - **Insufficient Permissions**: Check the user whose AWS Access Keys you are using has the required permissions
+- **Powershell Execution Policy Exception**: Powershell has set the Execution Policy as restricted. 
+
+To temporary disable it run the following
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+Run the script
+
+```powershell
+.\DeregisterAndDeleteSnapshots.ps1 ami-id-list.txt
+```
+
+And then restrict the Execution Policy again
+
+```powershell
+Set-ExecutionPolicy Restricted
+```
