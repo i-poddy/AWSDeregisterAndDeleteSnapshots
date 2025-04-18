@@ -1,0 +1,14 @@
+# Ignore logs
+*.log
+
+# Ignore AWS CLI cache and configuration 
+.aws/
+
+# Ignore environment variables files
+.env
+
+# Ignore output files (log files, results, etc.)
+output/
+
+# Ignore ami list
+*.txt
