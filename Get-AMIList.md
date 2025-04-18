@@ -1,5 +1,3 @@
-### `Get_AMI_List_By_Name.md`
-
 # Retrieve AMI IDs by Name Pattern
 
 This PowerShell script retrieves Amazon Machine Image (AMI) IDs based on a name pattern using the AWS CLI. It helps you find and log AMIs that match a specific naming convention, such as backups or versioned images.
